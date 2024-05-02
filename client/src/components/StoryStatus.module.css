@@ -1,0 +1,87 @@
+.mainStories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainStories h1 {
+  position: absolute;
+  bottom: 22%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 320px;
+  line-height: normal;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 1rem;
+  
+}
+
+.mainStories p {
+  position: absolute;
+  bottom: 7%;
+  color: white;
+  font-size: 1rem;
+  line-height: normal;
+  width: 320px;
+  height: 98px;
+  align-items: center;
+}
+
+
+.storyIcons {
+  position: absolute;
+  bottom: 2%;
+  width: 269px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.extraIcons {
+  position: absolute;
+  top: 6%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.change_btn {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 45%;
+  right: 25%;
+  z-index: 400;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.try {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  cursor: pointer;
+}
+.share{
+  cursor: pointer;
+  z-index: 10000;
+}
+.liked {
+  display: flex;
+  z-index: 3434;
+}
+.likedCounter {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}

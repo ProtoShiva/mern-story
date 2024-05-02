@@ -1,0 +1,261 @@
+/* .container {
+  background-color: red;
+  padding: 0rem 1rem;
+} */
+.hamburger2{
+  display: none;
+}
+.header {
+  display: flex;
+  height: 10vh;
+  /* width: 100vw; */
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.notloggenIn {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
+}
+
+.loggenIn {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  align-items: center;
+  position: relative;
+}
+
+.btn1,
+.btn2 {
+  width: 136px;
+  border-radius: 25px;
+  height: 45px;
+  font-weight: bold;
+
+}
+.btn1 {
+  background-color: #ff7373;
+  color: #ffffff;
+ 
+}
+.btn2 {
+  background-color: #73abff;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.titles {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 2.5rem;
+  align-items: center;
+  margin-top: 1.8rem;
+  padding: 0rem 1rem;
+  margin-bottom: 3.2rem;
+}
+
+.categories {
+  height: 300px;
+  width: 300px;
+  background-color: yellow;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_inner {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.2rem; */
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  height: 170px;
+  padding: 22px;
+  width: 100%;
+  /* border-radius: 20px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  position: absolute;
+  z-index: 9999;
+  right: -3.2%;
+  top: 120%;
+  cursor: pointer;
+}
+
+.popup_inner p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.image_box {
+  position: relative;
+  /* border-radius: 25px; */
+  cursor: pointer;
+}
+
+.image_box img {
+  width: 250px;
+  height: 170px;
+  border-radius: 35px;
+  object-fit: cover;
+}
+
+.image_box p {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
+.selected {
+  border: 3px solid #00ACD2;
+  border-radius: 36px;
+}
+.info_div img{
+  display: none;
+}
+
+.cross{
+  display: none;
+}
+.logoutbtn{
+  display: none;
+}
+.logout{
+  display: block;
+}
+@media screen and (max-width: 430px) {
+.titles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 100px;
+  gap: 2rem;
+  margin-top: 1.8rem;
+  padding: 0rem 1rem;
+  margin-bottom: 0.2rem;
+  }
+  .hamburger2 {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+.image_box {
+  position: relative;
+  /* border-radius: 2px; */
+  }
+.image_box img {
+  width: 142px;
+  height: 95px;
+  border-radius: 25px;
+  object-fit: cover;
+  }
+
+.image_box p {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  }
+  
+.btn1,
+.btn2 {
+  display: none;
+}
+
+.logoutbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
+  border-radius: 25px;
+  height: 45px;
+  font-weight: bold;
+  background-color: #ff7373;
+  color: white;
+  }
+
+.profile_photo{
+  display: none;
+  }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.loggenIn{
+    width: fit-content
+  }
+
+  
+.popup_inner {
+  background-color: #fff;
+  display: flex;
+  justify-content: start;
+  gap: 1.4rem;
+  height: 55vh;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  position: fixed;
+  z-index: 9999;
+  left: 4rem;
+  top: 4.2rem;
+  cursor: pointer;
+}
+
+.popup_inner p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.info_div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info_div p{
+  width: max-content;
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+.info_div img{
+  display: inline-block;
+}
+
+.cross{
+  display: inline-block;
+}
+
+
+  
+}

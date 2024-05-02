@@ -1,0 +1,219 @@
+.form_container {
+  background-color: white;
+  padding: 3rem;
+  width: 50rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.slide_btn {
+  width: 85px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: bold;
+  /* font-size: 1.2rem; */
+}
+.slide {
+  position: relative;
+}
+.slides_container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.close_icon {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  color: red;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.close_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: red;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 75%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.inputdivs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.inputdivs label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.inputdivs input,
+.cat {
+  color: #474141;
+  font-weight: 500;
+  border: 1px solid #000000;
+  padding-left: 1rem;
+  width: 280px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.caution {
+  text-align: end;
+  margin-right: 2rem;
+  color: #474141;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.navButtons {
+  display: flex;
+  gap: 1rem;
+}
+.navButtons button {
+  width: 115px;
+  height: 42px;
+  border-radius: 25px;
+}
+
+.btn1 {
+  background-color: #7eff73;
+  color: white;
+  font: bold;
+}
+
+.btn2 {
+  background-color: #73abff;
+  color: white;
+  font: bold;
+}
+
+.btn3 {
+  background-color: #ff7373;
+  color: white;
+  font: bold;
+  width: 115px;
+  height: 42px;
+  border-radius: 25px;
+}
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.story_container{
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+
+.form_container{
+  display: none;
+}
+.story_container{
+  display: block;
+  background-color: white;
+  padding: 1rem;
+ width: 75%;
+  border-radius: 5px;
+  position: relative;
+}
+.story_container p{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pro_container{
+  display: flex;
+}
+
+.slides_container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 13vw;
+  /* background-color: yellow; */
+  margin-bottom: 1rem;
+}
+
+.slide_btn {
+width: 45px;
+height: 28px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 400;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+}
+.slide {
+  position: relative;
+  width: 50%;
+
+  margin-bottom: 1rem;
+}
+
+.inputdivs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.inputdivs input,
+.cat {
+  color: #474141;
+  font-weight: 500;
+  border: 1px solid #000000;
+  padding-left: 1rem;
+  width: 190px;
+}
+
+.close_btn {
+  position: absolute;
+  right: -1.3rem;
+  top: -0.5rem;
+  color: red;
+}
+
+.input_details{
+  width: 54vw;
+  padding-left: 0.6rem;
+}
+.inputdivs label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+}

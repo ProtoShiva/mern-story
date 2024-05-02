@@ -1,0 +1,149 @@
+.main_container{
+  background-color: white;
+  width: 624px;
+  height: 520px;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.heading{
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-top: 4rem;
+}
+
+.fields{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  /* height: 100%; */
+}
+
+
+.inputfields{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.inputfields label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.inputfields input {
+  border: 1px solid gray;
+  border: none;
+  outline: none;
+  
+}
+
+.register_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: #73ABFF;
+  height: 45px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register_btn input{
+  cursor: pointer;
+}
+
+.close_icon{
+  color: red;
+  font-size: 2rem;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.error{
+  color: red;
+}
+
+.passIcons {
+  margin-left: auto;
+  margin-right: 4px;
+  color: #828282;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.passField{
+  display: flex;
+   border: 1px solid gray;
+   align-items: center;
+   width: 14rem;
+   padding: 0rem 0.4rem;
+}
+
+@media screen and (max-width: 430px) {
+
+  .main_container{
+    background-color: white;
+    width: 294px;
+    height: 520px;
+    border-radius: 25px;
+    padding: 2rem;
+  }
+  .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+  }
+  
+  
+  .inputfields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
+  .inputfields label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .inputfields input {
+    border: none;
+    height: 2rem;
+
+    
+  }
+
+  .passField{
+    display: flex;
+     border: 1px solid gray;
+     align-items: center;
+     width: 14rem;
+     padding: 0rem 0.4rem;
+  }
+  .register_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #73ABFF;
+    height: 45px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-left: 30%;
+  }
+
+}
