@@ -23,7 +23,6 @@ app.use(
 app.use("/api/user", authRouter)
 app.use("/api/story", storyRouter)
 app.use("/api/book", bookRouter)
-app.use("/*", handleNotFound)
 
 app.use(express.static(path.join(__dirname, "/client/dist")))
 
