@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { getUserStories } from "../api/story"
-import { useAuth } from "../hooks"
+import { useAuth, useNotification } from "../hooks"
 import UpdateStory from "./UpdateStory"
 import style from "./Stories.module.css"
 import StoryStatus from "./StoryStatus"
@@ -19,6 +19,7 @@ const Stories = () => {
   const { authInfo, status, setStatus, fetchStories, limit, setLimit } =
     useAuth()
   const { profile, isLoggedIn } = authInfo
+  const { updateNotification } = useNotification()
 
   const fetchUserStories = async (pageNo, limit) => {
     const { userStories, error } = await getUserStories(pageNo, limit)
@@ -33,8 +34,10 @@ const Stories = () => {
   }
 
   useEffect(() => {
-    fetchUserStories(currentPageNo, limit)
-  }, [])
+    if (isLoggedIn) {
+      fetchUserStories(currentPageNo, limit)
+    }
+  }, [isLoggedIn])
 
   const handleOnEditClick = (sId) => {
     setShowUpdateModal(true)
